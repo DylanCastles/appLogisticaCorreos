@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla 2 columnas con subceldas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 40px auto;
+        }
+        td {
+            border: 1px solid black;
+            width: 200px;
+            height: 400px; /* altura total de la fila */
+            padding: 0;
+            vertical-align: top;
+        }
+        .subcell {
+            border-bottom: 1px solid black;
+            height: calc(100% / 9); /* 9 subfilas */
+            text-align: center;
+            line-height: 1.5em;
+        }
+        .subcell:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- Columna izquierda: celda simple -->
+            <td></td>
+
+            <!-- Columna derecha: dividida en 9 subceldas -->
+            <td>
+                <div class="subcell">1</div>
+                <div class="subcell">2</div>
+                <div class="subcell">3</div>
+                <div class="subcell">4</div>
+                <div class="subcell">5</div>
+                <div class="subcell">6</div>
+                <div class="subcell">7</div>
+                <div class="subcell">8</div>
+                <div class="subcell">9</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

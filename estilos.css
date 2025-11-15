@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.app-container {
+    height: 100vh; /* Usamos toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header: 10% */
+.header {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.header .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburguesa span {
+    display: block;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Título: 10% */
+.titulo {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Buscador: 10% */
+.buscador {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador input {
+    width: 90%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Detalles: 30% */
+.detalles {
+    flex: 0 0 30%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.detalles .cuadro {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Mapa: 50% */
+.mapa {
+    flex: 0 0 50%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.mapa .cuadro {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

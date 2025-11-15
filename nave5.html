@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla 3x2 con Divisiones Internas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 40px auto;
+        }
+        td {
+            border: 1px solid black;
+            width: 150px;
+            height: 300px; /* altura fija para que las divisiones se vean */
+            padding: 0;
+        }
+        .subcell {
+            border-bottom: 1px solid black;
+            height: calc(100% / var(--rows));
+            text-align: center;
+            line-height: 1.5em;
+        }
+        .subcell:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nave 5</h1>
+    <table>
+        <tr>
+            <!-- Celda 1: 8 subfilas -->
+            <td>
+                <div class="subcell" style="--rows:8;">1-1</div>
+                <div class="subcell" style="--rows:8;">1-2</div>
+                <div class="subcell" style="--rows:8;">1-3</div>
+                <div class="subcell" style="--rows:8;">1-4</div>
+                <div class="subcell" style="--rows:8;">1-5</div>
+                <div class="subcell" style="--rows:8;">1-6</div>
+                <div class="subcell" style="--rows:8;">1-7</div>
+                <div class="subcell" style="--rows:8;">1-8</div>
+            </td>
+
+            <!-- Celda 2: 10 subfilas -->
+            <td>
+                <div class="subcell" style="--rows:10;">2-1</div>
+                <div class="subcell" style="--rows:10;">2-2</div>
+                <div class="subcell" style="--rows:10;">2-3</div>
+                <div class="subcell" style="--rows:10;">2-4</div>
+                <div class="subcell" style="--rows:10;">2-5</div>
+                <div class="subcell" style="--rows:10;">2-6</div>
+                <div class="subcell" style="--rows:10;">2-7</div>
+                <div class="subcell" style="--rows:10;">2-8</div>
+                <div class="subcell" style="--rows:10;">2-9</div>
+                <div class="subcell" style="--rows:10;">2-10</div>
+            </td>
+
+            <!-- Celda 3: 6 subfilas -->
+            <td>
+                <div class="subcell" style="--rows:6;">3-1</div>
+                <div class="subcell" style="--rows:6;">3-2</div>
+                <div class="subcell" style="--rows:6;">3-3</div>
+                <div class="subcell" style="--rows:6;">3-4</div>
+                <div class="subcell" style="--rows:6;">3-5</div>
+                <div class="subcell" style="--rows:6;">3-6</div>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Celda 4: 9 subfilas -->
+            <td>
+                <div class="subcell" style="--rows:9;">4-1</div>
+                <div class="subcell" style="--rows:9;">4-2</div>
+                <div class="subcell" style="--rows:9;">4-3</div>
+                <div class="subcell" style="--rows:9;">4-4</div>
+                <div class="subcell" style="--rows:9;">4-5</div>
+                <div class="subcell" style="--rows:9;">4-6</div>
+                <div class="subcell" style="--rows:9;">4-7</div>
+                <div class="subcell" style="--rows:9;">4-8</div>
+                <div class="subcell" style="--rows:9;">4-9</div>
+            </td>
+
+            <!-- Celda 5: 10 subfilas -->
+            <td>
+                <div class="subcell" style="--rows:10;">5-1</div>
+                <div class="subcell" style="--rows:10;">5-2</div>
+                <div class="subcell" style="--rows:10;">5-3</div>
+                <div class="subcell" style="--rows:10;">5-4</div>
+                <div class="subcell" style="--rows:10;">5-5</div>
+                <div class="subcell" style="--rows:10;">5-6</div>
+                <div class="subcell" style="--rows:10;">5-7</div>
+                <div class="subcell" style="--rows:10;">5-8</div>
+                <div class="subcell" style="--rows:10;">5-9</div>
+                <div class="subcell" style="--rows:10;">5-10</div>
+            </td>
+
+            <!-- Celda 6: 5 subfilas -->
+            <td>
+                <div class="subcell" style="--rows:5;">6-1</div>
+                <div class="subcell" style="--rows:5;">6-2</div>
+                <div class="subcell" style="--rows:5;">6-3</div>
+                <div class="subcell" style="--rows:5;">6-4</div>
+                <div class="subcell" style="--rows:5;">6-5</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
