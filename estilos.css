@@ -7,7 +7,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden; /* Evita scroll externo */
+    overflow: hidden;
 }
 
 .app-container {
@@ -25,16 +25,28 @@ html, body {
     padding: 0 10px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
 
-/* Logo */
+/* Botón pantalla completa (izquierda) */
+.fullscreen-btn {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Logo centrado */
 .header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 50px;
     height: 50px;
     object-fit: cover;
 }
 
-/* Botón hamburguesa */
+/* Botón hamburguesa (derecha) */
 .hamburguesa {
     display: flex;
     flex-direction: column;
@@ -46,6 +58,7 @@ html, body {
     cursor: pointer;
     padding: 0;
 }
+
 .hamburguesa span {
     display: block;
     height: 3px;
@@ -86,7 +99,7 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
-    min-height: 0; /* IMPORTANTE para flex interno sin scroll */
+    min-height: 0;
 }
 
 .detalles h2 {
@@ -109,7 +122,7 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
-    min-height: 0; /* IMPORTANTE para flex interno sin scroll */
+    min-height: 0;
 }
 
 .mapa h2 {
