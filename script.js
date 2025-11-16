@@ -17,9 +17,14 @@ sugerenciasContenedor.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
 buscador.parentNode.style.position = "relative";
 document.body.appendChild(sugerenciasContenedor);
 
-// Función auxiliar para normalizar texto (sin acentos, minúsculas)
+// Función auxiliar para normalizar texto
 function normalizar(texto) {
-    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    return texto
+        .normalize("NFD")            // separa letras de acentos
+        .replace(/[\u0300-\u036f]/g, "") // elimina acentos
+        .toLowerCase()
+        .trim()                      // elimina espacios al inicio y final
+        .replace(/\s+/g, " ");       // reemplaza múltiples espacios por uno
 }
 
 // Función para posicionar el contenedor justo debajo del input
@@ -40,10 +45,9 @@ function mostrarSugerencias(valor) {
         return;
     }
 
-    // Filtramos coincidencias normalizando texto y limitamos a 3 resultados
     const coincidencias = pueblos.filter(p =>
         normalizar(p.pueblo).includes(normalizar(valor))
-    ).slice(0, 3);
+    ).slice(0, 3); // máximo 3 resultados
 
     coincidencias.forEach(p => {
         const div = document.createElement("div");
