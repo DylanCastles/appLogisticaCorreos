@@ -1,12 +1,3 @@
-function ajustarAltura() {
-    const app = document.querySelector('.app-container');
-    app.style.height = window.innerHeight + 'px';
-}
-
-window.addEventListener('resize', ajustarAltura);
-window.addEventListener('orientationchange', ajustarAltura);
-ajustarAltura();
-
 // Referencias a elementos
 const buscador = document.querySelector(".buscador");
 const detallesGrid = document.querySelector(".detalles-grid");
