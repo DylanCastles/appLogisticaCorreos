@@ -211,6 +211,43 @@ html, body {
     border-radius: 8px;
 }
 
+.mapaEstilos6{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapaEstilos6 td {
+    border: 3px solid #032f60;
+    width: 20%;
+    height: 11.11111111111111111111111111111%;
+    text-align: left;
+    vertical-align: middle; 
+}
+
+.td-activo {
+    background-color: #ffcd00 !important; /* amarillo */
+}
+
+.tipoAlmacen {
+    background-color: #8f8f8f;
+}
+
+.fueraZona {
+    background-color: #032f60;
+}
+
+.mapa-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.mapa-wrapper .mapaEstilos {
+    flex: 1; /* Hace que la tabla ocupe todo el alto disponible */
+}
+
 .detalles-grid {
     display: flex;
     justify-content: space-between;

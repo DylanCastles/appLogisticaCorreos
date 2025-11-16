@@ -1,3 +1,63 @@
+const mapaDiv = document.getElementById("cuadro-mapa");
+
+const mapasPorNave = {
+    "Nave 6": `
+        <table class="mapaEstilos6" border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td style="border-right: none;border-top: none;border-left: none;">5</td>
+                <td rowspan="2" style="border-right: none;border-left:none;border-top: none;"></td>
+                <td rowspan="7" style="border-left: none;border-right: none;border-top: none;"></td>
+                <td rowspan="8" style="border-left: none;border-right: none;border-top: none;"></td>
+                <td rowspan="8" style="border-left: none;border-top: none;border-right: none;"></td>
+            </tr>
+            <tr>
+                <td style="border-left: none;" class="tipoAlmacen seccionA" id="posicion1"></td>
+            </tr>
+            <tr>
+                <td style="border-left: none;">6</td>
+                <td class="tipoAlmacen seccionB" id="posicion1"></td>
+            </tr>
+            <tr>
+                <td style="border-left: none;" class="tipoAlmacen seccionA" id="posicion2"></td>
+                <td class="tipoAlmacen seccionB" id="posicion2"></td>
+            </tr>
+            <tr>
+                <td style="border:none;">7</td>
+                <td class="tipoAlmacen seccionB" id="posicion3"></td>
+            </tr>
+            <tr>
+                <td style="border:none;"></td>
+                <td class="tipoAlmacen seccionB" id="posicion4"></td>
+            </tr>
+            <tr>
+                <td style="border:none;">8</td>
+                <td class="tipoAlmacen seccionB" id="posicion5"></td>
+            </tr>
+            <tr>
+                <td style="border:none;"></td>
+                <td style="border-right:none;border-bottom:none;" class="fueraZona"></td>
+                <td style="border-left:none;border-bottom:none;" class="fueraZona"></td>
+            </tr>
+            <tr>
+                <td style="border:none;">9</td>
+                <td style="border-right:none;border-top:none;border-bottom: none;" class="fueraZona"></td>
+                <td style="border-left:none;border-top:none;border-bottom: none;" class="fueraZona"></td>
+                <td style="border-bottom: none;" class="tipoAlmacen seccionC" id="posicion1"></td>
+                <td style="border-bottom: none;border-right: none;" class="tipoAlmacen seccionC" id="posicion2"></td>
+            </tr>
+        </table>
+    `,
+    "Nave 2": `
+        <div style="width:100%; height:100%; background-color:lightgreen;">
+            <h2 style="text-align:center;">Mapa Nave 2</h2>
+            <p>Contenido HTML específico para Nave 2</p>
+        </div>
+    `,
+    "default": `<p style="text-align:center;">Selecciona un pueblo</p>`
+};
+
+/* ----------------------------- ALTURA MÓVIL ------------------------------ */
+
 function ajustarAltura() {
     const app = document.querySelector('.app-container');
     app.style.height = window.innerHeight + 'px';
@@ -7,13 +67,15 @@ window.addEventListener('resize', ajustarAltura);
 window.addEventListener('orientationchange', ajustarAltura);
 ajustarAltura();
 
-// Referencias a elementos
+/* ----------------------------- REFERENCIAS ------------------------------ */
+
 const buscador = document.querySelector(".buscador");
 const detallesGrid = document.querySelector(".detalles-grid");
 const switchDomingo = document.querySelector(".switch input");
 const btnLimpiar = document.querySelector(".limpiar-buscador");
 
-// Crear contenedor de sugerencias
+/* ----------------------- SUGERENCIAS DEL BUSCADOR ----------------------- */
+
 const sugerenciasContenedor = document.createElement("div");
 sugerenciasContenedor.style.position = "absolute";
 sugerenciasContenedor.style.backgroundColor = "white";
@@ -26,27 +88,24 @@ sugerenciasContenedor.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
 buscador.parentNode.style.position = "relative";
 document.body.appendChild(sugerenciasContenedor);
 
-// Función auxiliar para normalizar texto
 function normalizar(texto) {
     return texto
-        .normalize("NFD")            // separa letras de acentos
-        .replace(/[\u0300-\u036f]/g, "") // elimina acentos
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()
-        .trim()                      // elimina espacios al inicio y final
-        .replace(/\s+/g, " ");       // reemplaza múltiples espacios por uno
+        .trim()
+        .replace(/\s+/g, " ");
 }
 
-// Función para posicionar el contenedor justo debajo del input
 function posicionarSugerencias() {
     const rect = buscador.getBoundingClientRect();
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    const scrollTop = window.scrollY;
+    const scrollLeft = window.scrollX;
     sugerenciasContenedor.style.top = rect.bottom + scrollTop + "px";
     sugerenciasContenedor.style.left = rect.left + scrollLeft + "px";
     sugerenciasContenedor.style.width = rect.width + "px";
 }
 
-// Función para mostrar sugerencias
 function mostrarSugerencias(valor) {
     sugerenciasContenedor.innerHTML = "";
     if (!valor) {
@@ -54,17 +113,16 @@ function mostrarSugerencias(valor) {
         return;
     }
 
-    const coincidencias = pueblos.filter(p =>
-        normalizar(p.pueblo).includes(normalizar(valor))
-    ).slice(0, 3); // máximo 3 resultados
+    const coincidencias = pueblos
+        .filter(p => normalizar(p.pueblo).includes(normalizar(valor)))
+        .slice(0, 3);
 
     coincidencias.forEach(p => {
         const div = document.createElement("div");
         div.textContent = p.pueblo;
         div.style.padding = "8px";
         div.style.cursor = "pointer";
-        div.style.transition = "background-color 0.2s";
-        
+
         div.addEventListener("mouseover", () => {
             div.style.backgroundColor = "#032f60";
             div.style.color = "#fff";
@@ -86,12 +144,44 @@ function mostrarSugerencias(valor) {
     if (coincidencias.length) {
         posicionarSugerencias();
         sugerenciasContenedor.style.display = "block";
-    } else {
-        sugerenciasContenedor.style.display = "none";
     }
 }
 
-// Función para actualizar los detalles
+/* ------------------------ MAPA: NORMALIZAR NAVE ------------------------ */
+
+function getMapaForNave(nave) {
+    if (!nave) return mapasPorNave["default"];
+
+    const s = String(nave).trim();
+    const candidates = new Set();
+
+    candidates.add(s);
+    candidates.add("Nave " + s);
+    candidates.add(s.replace(/^nave\s*/i, ""));
+
+    const num = s.match(/\d+/)?.[0];
+    if (num) {
+        candidates.add(num);
+        candidates.add("Nave " + num);
+    }
+
+    const keys = Object.keys(mapasPorNave);
+
+    for (const c of candidates)
+        for (const key of keys)
+            if (key.toLowerCase() === c.toLowerCase())
+                return mapasPorNave[key];
+
+    for (const c of candidates)
+        for (const key of keys)
+            if (key.toLowerCase().includes(String(c).toLowerCase()))
+                return mapasPorNave[key];
+
+    return mapasPorNave["default"];
+}
+
+/* --------------------------- ACTUALIZAR DETALLES ------------------------ */
+
 function actualizarDetalles(pueblo) {
     const valores = detallesGrid.querySelectorAll(".detalle-valor");
     const firma = detallesGrid.querySelector(".firma-box");
@@ -101,33 +191,43 @@ function actualizarDetalles(pueblo) {
     valores[2].textContent = pueblo.posición || "";
     valores[3].textContent = pueblo.provincia || "";
 
-    // Gestionar firma según switch de domingo
     if (switchDomingo.checked) {
-        firma.className = pueblo["firma-domingo"] === "TRUE" ? 
-            "firma-box firma-box-checked" : "firma-box firma-box-unchecked";
+        firma.className =
+            pueblo["firma-domingo"] === "TRUE"
+                ? "firma-box firma-box-checked"
+                : "firma-box firma-box-unchecked";
     } else {
-        firma.className = pueblo.firma === "TRUE" ? 
-            "firma-box firma-box-checked" : "firma-box firma-box-unchecked";
+        firma.className =
+            pueblo.firma === "TRUE"
+                ? "firma-box firma-box-checked"
+                : "firma-box firma-box-unchecked";
     }
+
+    mapaDiv.innerHTML = getMapaForNave(pueblo.nave);
+
+    // Quitar resaltado previo
+    mapaDiv.querySelectorAll("td").forEach(td => td.classList.remove("td-activo"));
+
+    // Resaltar la celda correcta
+    const selector = `td.seccion${pueblo.sección}#posicion${pueblo.posición}`;
+    const celda = mapaDiv.querySelector(selector);
+    if (celda) celda.classList.add("td-activo");
 }
 
-// Escuchar el input
+/* ----------------------------- EVENTOS ------------------------------ */
+
 buscador.addEventListener("input", e => mostrarSugerencias(e.target.value));
 
-// Reaplicar firma si se cambia el switch del domingo
 switchDomingo.addEventListener("change", () => {
-    const puebloSeleccionado = pueblos.find(p => p.pueblo === buscador.value);
-    if (puebloSeleccionado) actualizarDetalles(puebloSeleccionado);
+    const p = pueblos.find(p => p.pueblo === buscador.value);
+    if (p) actualizarDetalles(p);
 });
 
-// Cerrar sugerencias si se hace click fuera
 document.addEventListener("click", e => {
-    if (!buscador.contains(e.target) && !sugerenciasContenedor.contains(e.target)) {
+    if (!buscador.contains(e.target) && !sugerenciasContenedor.contains(e.target))
         sugerenciasContenedor.style.display = "none";
-    }
 });
 
-// Reposicionar sugerencias al redimensionar ventana o al hacer scroll
 window.addEventListener("resize", () => {
     if (sugerenciasContenedor.style.display === "block") posicionarSugerencias();
 });
@@ -135,7 +235,6 @@ window.addEventListener("scroll", () => {
     if (sugerenciasContenedor.style.display === "block") posicionarSugerencias();
 });
 
-// Botón para limpiar buscador y resetear detalles
 btnLimpiar.addEventListener("click", () => {
     buscador.value = "";
     sugerenciasContenedor.style.display = "none";
@@ -143,4 +242,5 @@ btnLimpiar.addEventListener("click", () => {
     const firma = detallesGrid.querySelector(".firma-box");
     valores.forEach(v => v.textContent = "");
     firma.className = "firma-box firma-box-unchecked";
+    mapaDiv.innerHTML = mapasPorNave["default"];
 });

@@ -1389,7 +1389,7 @@ const pueblos = [
   {
     "pueblo": "Vic",
     "nave": "6",
-    "sección": "C",
+    "sección": "B",
     "posición": "1",
     "provincia": "Barcelona",
     "firma": "TRUE",
@@ -1570,7 +1570,7 @@ const pueblos = [
     "pueblo": "Terrassa (op, ur1, ur3)",
     "nave": "6",
     "sección": "A",
-    "posición": "3",
+    "posición": "2",
     "provincia": "Barcelona",
     "firma": "TRUE",
     "firma-domingo": "TRUE"
