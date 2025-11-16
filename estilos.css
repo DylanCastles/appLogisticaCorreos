@@ -196,6 +196,9 @@ html, body {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-height: 0; /* importante para que el scroll interno funcione */
+    overflow-y: auto;
 }
 
 .cuadro-mapa {
