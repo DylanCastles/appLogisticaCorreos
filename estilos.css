@@ -18,7 +18,7 @@ html, body {
 
 .app-container {
     /* hacer que en movil la altura sea la altura real visible */
-    height: 100lvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #ffcd00;
