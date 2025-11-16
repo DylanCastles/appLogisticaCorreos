@@ -47,11 +47,57 @@ const mapasPorNave = {
             </tr>
         </table>
     `,
-    "Nave 2": `
-        <div style="width:100%; height:100%; background-color:lightgreen;">
-            <h2 style="text-align:center;">Mapa Nave 2</h2>
-            <p>Contenido HTML específico para Nave 2</p>
-        </div>
+    "Nave 5 ABC": `
+        <table class="mapaEstilos5ABC" border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td class="seccionA" id="posicion1" style="border-top: none;border-left: none;">15</td>
+                <td rowspan="10" class="fueraZona" style="border-top: none;border-bottom: none;"></td>
+                <td class="seccionB" id="posicion1" style="border-top: none;"></td>
+                <td class="seccionC" id="posicion1" style="border-top: none;border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion2" style="border-left: none;"></td>
+                <td class="seccionB" id="posicion2"></td>
+                <td rowspan="4" class="fueraZona" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion3" style="border-left: none;">16</td>
+                <td class="seccionB" id="posicion3"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion4" style="border-left: none;"></td>
+                <td class="seccionB" id="posicion4"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion5" style="border-left: none;">17</td>
+                <td class="seccionB" id="posicion5"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion6" style="border-left: none;"></td>
+                <td class="seccionB" id="posicion6"></td>
+                <td class="seccionC" id="posicion2" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion7" style="border-left: none;">18</td>
+                <td class="seccionB" id="posicion7"></td>
+                <td class="seccionC" id="posicion3" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion8" style="border-left: none;"></td>
+                <td class="seccionB" id="posicion8"></td>
+                <td class="seccionC" id="posicion4" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion9" style="border-left: none;">19</td>
+                <td class="seccionB" id="posicion9"></td>
+                <td class="seccionC" id="posicion5" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionA" id="posicion10" style="border-left: none;border-bottom: none;"></td>
+                <td class="seccionB" id="posicion10" style="border-bottom: none;"></td>
+                <td class="fueraZona" style="border-right: none;border-bottom: none;"></td>
+            </tr>
+        </table>
     `,
     "default": `<p style="text-align:center;">Selecciona un pueblo</p>`
 };

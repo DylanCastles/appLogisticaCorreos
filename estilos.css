@@ -226,6 +226,21 @@ html, body {
     vertical-align: middle; 
 }
 
+.mapaEstilos5ABC{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapaEstilos5ABC td {
+    border: 3px solid #032f60;
+    width: 25%;
+    height: 10%;
+    text-align: left;
+    vertical-align: middle; 
+}
+
 .td-activo {
     background-color: #ffcd00 !important; /* amarillo */
 }
