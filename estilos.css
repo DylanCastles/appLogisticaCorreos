@@ -1,140 +1,263 @@
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #032f60;
+    font-size: large;
 }
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; /* evita scroll */
 }
 
 .app-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #ffcd00;
 }
 
 /* Header: 10% */
 .header {
-    flex: 0 0 10%;
+    width: 100%;
+    height: 10%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    justify-content: center; /* centra el logo */
+    background-color: #032f60;
     position: relative;
 }
 
-/* Botón pantalla completa (izquierda) */
-.fullscreen-btn {
-    font-size: 1.5em;
-    background: none;
-    border: none;
-    cursor: pointer;
+/* Contenedor del switch (izquierda) */
+.switch-container {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Logo centrado */
-.header .logo {
+/* Label del switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-top: 5px; /* espacio para el texto encima */
+}
+
+/* Checkbox oculto */
+.switch input {
+    display: none;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+/* Bola */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Activado: fondo verde */
+.switch input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+/* Bola se mueve */
+.switch input:checked + .slider::before {
+    transform: translateX(30px);
+}
+
+/* Texto encima del switch */
+.switch-label {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Logo centrado absoluto */
+.logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
+    height: 80%;
     object-fit: cover;
 }
 
-/* Botón hamburguesa (derecha) */
-.hamburguesa {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.hamburguesa span {
-    display: block;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-}
-
-/* Título: 10% */
+/* Título: 5% */
 .titulo {
-    flex: 0 0 10%;
+    width: 100%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    color: #333;
+    font-size: x-large;
 }
 
 /* Buscador: 10% */
-.buscador {
-    flex: 0 0 10%;
+.buscadorContenedor {
+    width: 100%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* necesario para posicionar botón */
 }
 
-.buscador input {
+.buscador {
     width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid #032f60;
+    padding: 0 40px 0 15px; /* espacio a la derecha para el botón */
+    font-size: large;
+}
+
+.limpiar-buscador {
+    position: absolute;
+    right: 8%;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #032f60;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    line-height: 1;
+}
+
+.limpiar-buscador:hover {
+    color: #ff0000;
+}
+
+/* Detalles: 20% */
+.detallesContenedor {
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloContenedor {
+    font-size: 1.2em;
+    color: #032f60;
+    margin-bottom: 5px;
+}
+
+.cuadro-detalles {
+    margin: 5px;
+    width: auto;
+    height: 100%;
+    min-height: fit-content;
+    border: 3px solid #032f60;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mapa: 55% */
+.mapaContenedor {
+    width: 100%;
     height: 60%;
-    padding: 0 10px;
-    font-size: 1em;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-}
-
-/* Detalles: 30% */
-.detalles {
-    flex: 0 0 30%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
-    min-height: 0;
 }
 
-.detalles h2 {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.2em;
-}
-
-.detalles .cuadro {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
+.cuadro-mapa {
+    margin: 5px;
+    width: auto;
+    height: 100%;
+    min-height: fit-content;
+    border: 3px solid #032f60;
+    background-color: white;
     border-radius: 8px;
 }
 
-/* Mapa: 50% */
-.mapa {
-    flex: 0 0 50%;
+.detalles-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.detalle-col {
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
-    min-height: 0;
-}
-
-.mapa h2 {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.2em;
-}
-
-.mapa .cuadro {
+    justify-content: space-around;
     flex: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
 }
+
+.detalle-item {
+    display: flex;
+    justify-content: flex-start; /* títulos siempre a la izquierda */
+    align-items: center;
+    margin: 5px 0;
+}
+
+.detalle-titulo {
+    color: #032f60;
+    font-weight: bold;
+    width: 80px; /* ancho fijo para alinear todos los títulos */
+    flex-shrink: 0; /* no se encoge */
+}
+
+.detalle-valor {
+    color: #ffcd00;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px; /* espacio entre título y valor */
+    flex-grow: 1; /* ocupa todo el espacio restante */
+}
+
+
+/* Firma */
+.firma-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #032f60;
+    border-radius: 50%;
+    background-color: white;
+    color: #032f60;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Tick visible/invisible */
+.firma-box-checked { color: #032f60; }
+.firma-box-unchecked { color: transparent; }

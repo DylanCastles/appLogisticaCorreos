@@ -1,0 +1,199 @@
+﻿pueblo;nave;sección;posición;provincia;firma;firma-domingo
+Badalona (ur2, ur3, op);5;A;1;Barcelona;TRUE;TRUE
+Centelles;5;A;2;Barcelona;FALSE;FALSE
+Tona;5;A;2;Barcelona;FALSE;FALSE
+Taradell;5;A;2;Barcelona;FALSE;FALSE
+Prat lluçanes;5;A;4;Barcelona;FALSE;FALSE
+Navarcles;5;A;4;Barcelona;FALSE;FALSE
+Balsareny;5;A;4;Barcelona;FALSE;FALSE
+Vilanova i la Geltrú;5;A;5;Barcelona;TRUE;TRUE
+Esparreguera;5;A;6;Barcelona;FALSE;FALSE
+Abrera;5;A;6;Barcelona;FALSE;FALSE
+St Esteve Sesrovires;5;A;6;Barcelona;FALSE;FALSE
+Sant Quirze de Besora;5;A;8;Barcelona;FALSE;FALSE
+Torello;5;A;8;Barcelona;FALSE;FALSE
+Manlleu;5;A;8;Barcelona;FALSE;FALSE
+Sta Coloma (use);5;A;10;Barcelona;TRUE;TRUE
+Sta Perpetua;5;B;1;Barcelona;FALSE;FALSE
+La Llagosta;5;B;1;Barcelona;FALSE;FALSE
+Polinya;5;B;1;Barcelona;FALSE;FALSE
+Sentmenat;5;B;1;Barcelona;FALSE;FALSE
+Roquetes;5;B;2;Barcelona;FALSE;FALSE
+Sitges;5;B;2;Barcelona;FALSE;FALSE
+St Pere de Ribes;5;B;2;Barcelona;FALSE;FALSE
+Piera;5;B;3;Barcelona;FALSE;FALSE
+Martorell;5;B;3;Barcelona;TRUE;TRUE
+Masquefa;5;B;3;Barcelona;FALSE;FALSE
+La Roca;5;B;4;Barcelona;FALSE;FALSE
+Montmeló;5;B;4;Barcelona;FALSE;FALSE
+Montornès;5;B;4;Barcelona;FALSE;FALSE
+Vilanova del Vallès;5;B;4;Barcelona;FALSE;FALSE
+Palafolls;5;B;5;Barcelona;FALSE;FALSE
+Tordera;5;B;5;Barcelona;FALSE;FALSE
+Pineda;5;B;5;Barcelona;FALSE;FALSE
+Malgrat de Mar;5;B;5;Barcelona;FALSE;FALSE
+Sta Margarida de Montbui;5;B;6;Barcelona;FALSE;FALSE
+Capellades;5;B;6;Barcelona;FALSE;FALSE
+Vilanova del Camí;5;B;6;Barcelona;FALSE;FALSE
+Palautordera;5;B;7;Barcelona;FALSE;FALSE
+Sant Celoni;5;B;7;Barcelona;FALSE;FALSE
+Llinars;5;B;7;Barcelona;FALSE;FALSE
+St Antoni de Vilamajor;5;B;7;Barcelona;FALSE;FALSE
+Cubelles;5;B;8;Barcelona;FALSE;FALSE
+St Boi;5;B;9;Barcelona;FALSE;FALSE
+Sta Coloma de Cervelló;5;B;9;Barcelona;FALSE;FALSE
+Sant Vicenç dels Horts;5;B;9;Barcelona;FALSE;FALSE
+Torrelles;5;B;9;Barcelona;FALSE;FALSE
+Esplugues;5;B;10;Barcelona;FALSE;FALSE
+Cornellà de Llobregat;5;B;10;Barcelona;FALSE;FALSE
+St Joan Despí;5;C;1;Barcelona;FALSE;FALSE
+St Feliu de Llobregat;5;C;1;Barcelona;FALSE;FALSE
+St Just Desvern;5;C;1;Barcelona;FALSE;FALSE
+Montgat;5;C;2;Barcelona;FALSE;FALSE
+Tiana;5;C;2;Barcelona;FALSE;FALSE
+Dosrius;5;C;3;Barcelona;FALSE;FALSE
+Argentona;5;C;3;Barcelona;FALSE;FALSE
+Masnou;5;C;4;Barcelona;FALSE;FALSE
+Alella;5;C;4;Barcelona;FALSE;FALSE
+Teia;5;C;4;Barcelona;FALSE;FALSE
+Molins de Rei;5;C;5;Barcelona;FALSE;FALSE
+Pallejà;5;C;5;Barcelona;FALSE;FALSE
+St Andreu de la Barca;5;C;5;Barcelona;FALSE;FALSE
+Papiol;5;C;5;Barcelona;FALSE;FALSE
+Palma de Cervelló;5;D;1;Barcelona;FALSE;FALSE
+Corbera de Llobregat;5;D;1;Barcelona;FALSE;FALSE
+Vallirana;5;D;1;Barcelona;FALSE;FALSE
+Cervelló;5;D;1;Barcelona;FALSE;FALSE
+Premià de Mar;5;D;3;Barcelona;FALSE;FALSE
+Premià de Dalt;5;D;3;Barcelona;FALSE;FALSE
+Vilassar de Dalt;5;D;3;Barcelona;FALSE;FALSE
+Cabrera;5;D;3;Barcelona;FALSE;FALSE
+Cabrils;5;D;3;Barcelona;FALSE;FALSE
+Sallent;5;D;4;Barcelona;TRUE;TRUE
+Castellterçol;5;D;5;Barcelona;FALSE;FALSE
+Caldes de Montbui;5;D;5;Barcelona;FALSE;FALSE
+Moià;5;D;5;Barcelona;FALSE;FALSE
+Sant Feliu de Codines;5;D;5;Barcelona;FALSE;FALSE
+Igualada;5;D;6;Barcelona;TRUE;TRUE
+St Cugat;5;D;7;Barcelona;FALSE;FALSE
+Valldoreix;5;D;7;Barcelona;FALSE;FALSE
+Vilafranca;5;D;8;Barcelona;TRUE;TRUE
+Barcelona (use 6);5;E;1;Barcelona;FALSE;FALSE
+IKEA;5;E;1;Barcelona;FALSE;FALSE
+Mataró;5;E;2;Barcelona;TRUE;TRUE
+Vilassar de Mar;5;E;2;Barcelona;FALSE;FALSE
+Calella;5;E;3;Barcelona;FALSE;FALSE
+Arenys de Mar;5;E;3;Barcelona;FALSE;FALSE
+Canet;5;E;3;Barcelona;FALSE;FALSE
+St Cebrià de Vallalta;5;E;3;Barcelona;FALSE;FALSE
+St Pol de Mar;5;E;3;Barcelona;FALSE;FALSE
+Sta Margarida i els Monjos;5;E;4;Barcelona;FALSE;FALSE
+St Martí Sarroca;5;E;4;Barcelona;FALSE;FALSE
+Berga;5;E;5;Barcelona;TRUE;TRUE
+Baga;5;E;5;Barcelona;FALSE;FALSE
+Puig-Reig;5;E;5;Barcelona;FALSE;FALSE
+Navas;5;E;5;Barcelona;FALSE;FALSE
+Gironella;5;E;5;Barcelona;FALSE;FALSE
+Sta Maria d’Oló;5;E;6;Barcelona;FALSE;FALSE
+Manresa;5;E;6;Barcelona;TRUE;TRUE
+Artés;5;E;6;Barcelona;FALSE;FALSE
+Garriga;5;E;7;Barcelona;FALSE;FALSE
+Canovelles;5;E;7;Barcelona;FALSE;FALSE
+Franqueses;5;E;7;Barcelona;FALSE;FALSE
+L'Ametlla;5;E;7;Barcelona;FALSE;FALSE
+Bigues i Riells;5;E;8;Barcelona;FALSE;FALSE
+Lliçà d'amunt;5;E;8;Barcelona;FALSE;FALSE
+Lliçà de Vall;5;E;8;Barcelona;FALSE;FALSE
+Parets;5;E;8;Barcelona;FALSE;FALSE
+Sta Eulàlia de Ronçana;5;E;8;Barcelona;FALSE;FALSE
+Gelida;5;E;9;Barcelona;FALSE;FALSE
+St Sadurní;5;E;9;Barcelona;TRUE;TRUE
+St Pere de Riudebitlles;5;E;9;Barcelona;FALSE;FALSE
+Cerdanyola;5;E;10;Barcelona;FALSE;FALSE
+St Quirze;5;E;10;Barcelona;FALSE;FALSE
+Bellaterra;5;F;1;Barcelona;FALSE;FALSE
+Barberà;5;F;1;Barcelona;FALSE;FALSE
+Badia;5;F;1;Barcelona;FALSE;FALSE
+Begues;5;F;2;Barcelona;FALSE;FALSE
+Gava;5;F;2;Barcelona;FALSE;FALSE
+Castelldefels;5;F;2;Barcelona;FALSE;FALSE
+El Prat;5;F;3;Barcelona;FALSE;FALSE
+Viladecans;5;F;3;Barcelona;FALSE;FALSE
+Martorelles;5;F;4;Barcelona;FALSE;FALSE
+St Fost;5;F;4;Barcelona;FALSE;FALSE
+Mollet;5;F;4;Barcelona;FALSE;FALSE
+Palau Solita;5;F;4;Barcelona;FALSE;FALSE
+St Adrià;5;F;5;Barcelona;TRUE;TRUE
+El Prat (URP);1;;1;Barcelona;TRUE;TRUE
+Colón;1;;2;;TRUE;TRUE
+El Vendrell;1;;3;Tarragona;TRUE;TRUE
+Calafell;1;;4;Tarragona;FALSE;FALSE
+Segur de Calafell;1;;4;Tarragona;FALSE;FALSE
+Cunit;1;;4;Tarragona;FALSE;FALSE
+Palamós;1;;5;Girona;FALSE;TRUE
+Palafrugell;1;;5;Girona;FALSE;TRUE
+La Bisbal d’Empordà;1;;5;Girona;FALSE;FALSE
+Sta Coloma de Farners;1;;6;Girona;FALSE;TRUE
+Hostalric;1;;6;Girona;FALSE;FALSE
+Arbúcies;1;;6;Girona;FALSE;FALSE
+Sant Hilari Sacalm;1;;6;Girona;FALSE;FALSE
+Caldes de Malavella;1;;7;Girona;FALSE;FALSE
+Maçanet;1;;7;Girona;FALSE;FALSE
+Sils;1;;7;Girona;FALSE;FALSE
+Llagostera;1;;7;Girona;FALSE;FALSE
+Vidreres;1;;7;Girona;FALSE;FALSE
+Tossa de Mar;1;;8;Girona;FALSE;FALSE
+Blanes;1;;8;Girona;FALSE;FALSE
+Lloret de Mar;1;;8;Girona;FALSE;TRUE
+Ribes de Freser;1;;9;Girona;FALSE;FALSE
+Ripoll;1;;9;Girona;FALSE;FALSE
+Campdevànol;1;;9;Girona;FALSE;FALSE
+Calaf;6;C;1;Lleida;FALSE;FALSE
+St Fruitós;6;C;1;Barcelona;FALSE;FALSE
+St Julià de Vilatorta;6;C;1;Barcelona;FALSE;FALSE
+Rubí;6;C;1;Barcelona;FALSE;FALSE
+Castellbisbal;6;C;1;Barcelona;FALSE;FALSE
+Vic;6;C;1;Barcelona;TRUE;TRUE
+Masies de Voltregà;6;C;1;Barcelona;FALSE;FALSE
+Roda de Ter;6;C;1;Barcelona;FALSE;FALSE
+Ripollet;6;C;1;Barcelona;FALSE;FALSE
+Montcada i Reixac;6;C;1;Barcelona;FALSE;FALSE
+St Vicenç de Castellet;6;C;1;Barcelona;FALSE;FALSE
+Olesa de Montserrat;6;C;1;Barcelona;FALSE;FALSE
+Castellbell i el Vilar;6;C;1;Barcelona;FALSE;FALSE
+St Andreu de Llavaneres;6;C;1;Barcelona;FALSE;FALSE
+St Vicenç de Montalt;6;C;1;Barcelona;FALSE;FALSE
+Arenys de Munt;6;C;1;Barcelona;FALSE;FALSE
+Cardona;6;C;1;Barcelona;FALSE;FALSE
+Santpedor;6;C;1;Barcelona;FALSE;FALSE
+Súria;6;C;1;Barcelona;FALSE;FALSE
+Vacarisses;6;C;1;Barcelona;FALSE;FALSE
+Castellar;6;C;1;Barcelona;FALSE;FALSE
+Matadepera;6;C;1;Barcelona;FALSE;FALSE
+Cardedeu;6;C;1;Barcelona;FALSE;FALSE
+Granollers;6;C;2;Barcelona;TRUE;TRUE
+Sabadell (ur4, ur1);6;A;1;Barcelona;TRUE;TRUE
+Terrassa (op, ur1, ur3);6;A;3;Barcelona;TRUE;TRUE
+Vic;6;B;1;Barcelona;FALSE;FALSE
+Badalona (use, ur1);6;B;2;Barcelona;TRUE;TRUE
+Sabadell (use, ur2, ur3);6;B;3;Barcelona;TRUE;TRUE
+Terrassa (use, ur2);6;B;4;Barcelona;TRUE;TRUE
+Hospitalet;6;B;5;Barcelona;TRUE;TRUE
+Andorra;3;A;1;;FALSE;FALSE
+Girona (resto);3;A;2;Girona;TRUE;TRUE
+Girona (use);3;A;3;Girona;TRUE;TRUE
+Girona (ur1);3;A;3;Girona;TRUE;TRUE
+Salt;3;A;4;Girona;TRUE;TRUE
+Figueres;3;A;4;Girona;TRUE;TRUE
+Trade Inn;3;A;4;Girona;TRUE;TRUE
+Tarragona (use);3;A;5;Tarragona;TRUE;TRUE
+Tarragona (ur1);3;A;5;Tarragona;TRUE;TRUE
+Tarragona (ur2);3;A;5;Tarragona;TRUE;TRUE
+Reus;3;A;6;Tarragona;TRUE;TRUE
+Tarragona (resto);3;A;7;Tarragona;TRUE;TRUE
+Sant Cugat (CTA);3;A;8;Lleida;TRUE;TRUE
+Sant Cugat (URP);3;A;9;Lleida;TRUE;TRUE
+Mora d'Ebre;3;B;1;Tarragona;TRUE;TRUE
+Tortosa;3;B;2;Tarragona;TRUE;TRUE
+Amposta;3;B;3;Tarragona;TRUE;TRUE
+Puigcerda;3;B;4;Girona;FALSE;FALSE

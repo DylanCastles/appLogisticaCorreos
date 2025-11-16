@@ -4,47 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal - App Móvil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="app-container">
         <!-- Header -->
         <header class="header">
-            <!-- Botón pantalla completa -->
-            <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+            <!-- Switch + texto encima -->
+            <div class="switch-container">
+                <span class="switch-label">Domingo</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
 
             <!-- Logo centrado -->
-            <img src="logo.png" alt="Logo" class="logo">
+            <img src="./img/image.png" alt="Logo" class="logo">
 
-            <!-- Botón hamburguesa -->
-            <button class="hamburguesa">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <!-- Futuro menu para cambiar de pagina -->
+            <!-- <button class="hamburguesa">
+            </button> -->
         </header>
 
+
         <!-- Título -->
-        <div class="titulo">Logística</div>
+        <div class="titulo">Almacén</div>
 
         <!-- Buscador -->
-        <div class="buscador">
-            <input type="text" placeholder="Buscar...">
+        <div class="buscadorContenedor">
+            <input class="buscador" type="text" placeholder="Buscar...">
+            <button class="limpiar-buscador">×</button>
         </div>
+
 
         <!-- Detalles -->
-        <div class="detalles">
-            <h2>Detalles:</h2>
-            <div class="cuadro"></div>
+        <div class="detallesContenedor">
+            <div class="tituloContenedor">Detalles:</div>
+            <div class="cuadro-detalles">
+                <div class="detalles-grid">
+                    <!-- Columna izquierda -->
+                    <div class="detalle-col">
+                        <div class="detalle-item">
+                            <span class="detalle-titulo">Nave:</span>
+                            <span class="detalle-valor"></span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-titulo">Sección:</span>
+                            <span class="detalle-valor"></span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-titulo">Posición:</span>
+                            <span class="detalle-valor"></span>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha -->
+                    <div class="detalle-col">
+                        <div class="detalle-item">
+                            <span class="detalle-titulo">Provincia:</span>
+                            <span class="detalle-valor"></span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-titulo">Firma:</span>
+                            <span class="firma-box firma-box-unchecked">✓</span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-titulo"></span>
+                            <span class="detalle-valor"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <!-- Mapa -->
-        <div class="mapa">
-            <h2>Mapa:</h2>
-            <div class="cuadro"></div>
+        <div class="mapaContenedor">
+            <div class="tituloContenedor">Mapa:</div>
+            <div class="cuadro-mapa"></div>
         </div>
     </div>
-
     <script src="script.js"></script>
+    <script src="pueblos.js"></script>
 </body>
 </html>
