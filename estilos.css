@@ -211,6 +211,14 @@ html, body {
     border-radius: 8px;
 }
 
+.mapaEstilos6 td,
+.mapaEstilos5ABC td,
+.mapaEstilos5DEF td,
+.mapaEstilos1 td,
+.mapaEstilos3 td {
+    font-size: 0.7em;
+}
+
 .mapaEstilos6{
     border-collapse: collapse;
     margin: 0;
