@@ -293,6 +293,9 @@ html, body {
     text-align: right;
     vertical-align: middle; 
 }
+table td[style*="border: none"] {
+    border: none !important;
+}
 
 .td-activo {
     background-color: #ffcd00 !important; /* amarillo */
