@@ -182,7 +182,7 @@ const mapasPorNave = {
     "Nave 3": `
         <table class="mapaEstilos3" border="1" cellspacing="0" cellpadding="8">
             <tr>
-                <td rowspan="13" style="border: none;"></td>
+                <td rowspan="13" style="border: none;" class="fueraZona"></td>
                 <td class="tipoAlmacen seccionA" id="posicion1" style="border-top: none;"></td>
                 <td style="border: none;">58</td>
             </tr>
