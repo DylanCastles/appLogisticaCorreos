@@ -50,56 +50,193 @@ const mapasPorNave = {
     "Nave 5 ABC": `
         <table class="mapaEstilos5ABC" border="1" cellspacing="0" cellpadding="8">
             <tr>
-                <td class="seccionA" id="posicion1" style="border-top: none;border-left: none;">15</td>
-                <td rowspan="10" class="fueraZona" style="border-top: none;border-bottom: none;"></td>
-                <td class="seccionB" id="posicion1" style="border-top: none;"></td>
-                <td class="seccionC" id="posicion1" style="border-top: none;border-right: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion1" style="border-top: none;border-left: none;">15</td>
+                <td rowspan="10" style="border-top: none;border-bottom: none;"></td>
+                <td class="seccionB tipoAlmacen" id="posicion1" style="border-top: none;"></td>
+                <td class="seccionC tipoAlmacen" id="posicion1" style="border-top: none;border-right: none;"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion2" style="border-left: none;"></td>
-                <td class="seccionB" id="posicion2"></td>
-                <td rowspan="4" class="fueraZona" style="border-right: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion2" style="border-left: none;"></td>
+                <td class="seccionB tipoAlmacen" id="posicion2"></td>
+                <td rowspan="4" style="border-right: none;"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion3" style="border-left: none;">16</td>
-                <td class="seccionB" id="posicion3"></td>
+                <td class="seccionA tipoAlmacen" id="posicion3" style="border-left: none;">16</td>
+                <td class="seccionB tipoAlmacen" id="posicion3"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion4" style="border-left: none;"></td>
-                <td class="seccionB" id="posicion4"></td>
+                <td class="seccionA tipoAlmacen" id="posicion4" style="border-left: none;"></td>
+                <td class="seccionB tipoAlmacen" id="posicion4"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion5" style="border-left: none;">17</td>
-                <td class="seccionB" id="posicion5"></td>
+                <td class="seccionA tipoAlmacen" id="posicion5" style="border-left: none;">17</td>
+                <td class="seccionB tipoAlmacen" id="posicion5"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion6" style="border-left: none;"></td>
-                <td class="seccionB" id="posicion6"></td>
-                <td class="seccionC" id="posicion2" style="border-right: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion6" style="border-left: none;"></td>
+                <td class="seccionB tipoAlmacen" id="posicion6"></td>
+                <td class="seccionC tipoAlmacen" id="posicion2" style="border-right: none;"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion7" style="border-left: none;">18</td>
-                <td class="seccionB" id="posicion7"></td>
-                <td class="seccionC" id="posicion3" style="border-right: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion7" style="border-left: none;">18</td>
+                <td class="seccionB tipoAlmacen" id="posicion7"></td>
+                <td class="seccionC tipoAlmacen" id="posicion3" style="border-right: none;"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion8" style="border-left: none;"></td>
-                <td class="seccionB" id="posicion8"></td>
-                <td class="seccionC" id="posicion4" style="border-right: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion8" style="border-left: none;"></td>
+                <td class="seccionB tipoAlmacen" id="posicion8"></td>
+                <td class="seccionC tipoAlmacen" id="posicion4" style="border-right: none;"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion9" style="border-left: none;">19</td>
-                <td class="seccionB" id="posicion9"></td>
-                <td class="seccionC" id="posicion5" style="border-right: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion9" style="border-left: none;">19</td>
+                <td class="seccionB tipoAlmacen" id="posicion9"></td>
+                <td class="seccionC tipoAlmacen" id="posicion5" style="border-right: none;"></td>
             </tr>
             <tr>
-                <td class="seccionA" id="posicion10" style="border-left: none;border-bottom: none;"></td>
-                <td class="seccionB" id="posicion10" style="border-bottom: none;"></td>
+                <td class="seccionA tipoAlmacen" id="posicion10" style="border-left: none;border-bottom: none;"></td>
+                <td class="seccionB tipoAlmacen" id="posicion10" style="border-bottom: none;"></td>
                 <td class="fueraZona" style="border-right: none;border-bottom: none;"></td>
             </tr>
         </table>
     `,
-    "default": `<p style="text-align:center;">Selecciona un pueblo</p>`
+    "Nave 6 DEF": `
+        <table class="mapaEstilos5DEF" border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td style="border: none;"></td>
+                <td rowspan="10" style="border: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion9" style="border-top: none;"></td>
+                <td style="border-top: none;border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion8" style="border-left: none;">11</td>
+                <td class="seccionE tipoAlmacen" id="posicion8"></td>
+                <td class="seccionF tipoAlmacen" id="posicion5" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion7" style="border-left: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion7"></td>
+                <td class="seccionF tipoAlmacen" id="posicion4" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion6" style="border-left: none;">12</td>
+                <td class="seccionE tipoAlmacen" id="posicion6"></td>
+                <td class="seccionF tipoAlmacen" id="posicion3" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion5" style="border-left: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion5"></td>
+                <td class="seccionF tipoAlmacen" id="posicion2" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion4" style="border-left: none;">13</td>
+                <td class="seccionE tipoAlmacen" id="posicion4"></td>
+                <td class="seccionF tipoAlmacen" id="posicion1" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion3" style="border-left: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion3"></td>
+                <td rowspan="3" class="fueraZona" style="border-right: none;border-bottom: none;"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion2" style="border-left: none;">14</td>
+                <td class="seccionE tipoAlmacen" id="posicion2"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion1" style="border-left: none;border-bottom: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion1" style="border-bottom: none;"></td>
+            </tr>
+        </table>
+    `,
+    "Nave 1": `
+        <table class="mapaEstilos1" border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td rowspan="9" style="border: none;"></td>
+                <td id="posicion1" class="tipoAlmacen" style="border-top: none;border-right:none;">81</td>
+            </tr>
+            <tr>
+                <td id="posicion2" class="tipoAlmacen" style="border-right:none;"></td>
+            </tr>
+            <tr>
+                <td id="posicion3" class="tipoAlmacen" style="border-right:none;">80</td>
+            </tr>
+            <tr>
+                <td id="posicion4" class="tipoAlmacen" style="border-right:none;"></td>
+            </tr>
+            <tr>
+                <td id="posicion5" class="tipoAlmacen" style="border-right:none;">79</td>
+            </tr>
+            <tr>
+                <td id="posicion6" class="tipoAlmacen" style="border-right:none;"></td>
+            </tr>
+            <tr>
+                <td id="posicion7" class="tipoAlmacen" style="border-right:none;">78</td>
+            </tr>
+            <tr>
+                <td id="posicion8" class="tipoAlmacen" style="border-right:none;"></td>
+            </tr>
+            <tr>
+                <td id="posicion9" class="tipoAlmacen" style="border-bottom: none;border-right:none;">77</td>
+            </tr>
+            </table>
+    `,
+    "Nave 3": `
+        <table class="mapaEstilos3" border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td rowspan="13" style="border: none;"></td>
+                <td class="tipoAlmacen seccionA" id="posicion1" style="border-top: none;"></td>
+                <td style="border: none;">58</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion2"></td>
+                <td style="border: none;">57</td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion3"></td>
+                <td style="border: none;"></td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion4"></td>
+                <td style="border: none;">56</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion5"></td>
+                <td style="border: none;">55</td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion6"></td>
+                <td style="border: none;"></td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion7"></td>
+                <td style="border: none;">54</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td class="tipoAlmacen seccionB" id="posicion1" style="border-right:none;"></td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion8"></td>
+                <td class="tipoAlmacen seccionB" id="posicion2" style="border-right:none;">53</td>
+            </tr>
+            <tr>
+                <td class="tipoAlmacen seccionA" id="posicion9"></td>
+                <td class="tipoAlmacen seccionB" id="posicion3" style="border-right:none;"></td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td class="tipoAlmacen seccionB" id="posicion4" style="border-right:none;border-bottom:none;">52</td>
+            </tr>
+        </table>
+    `,
+    "default": ``
 };
 
 /* ----------------------------- ALTURA MÓVIL ------------------------------ */
@@ -195,33 +332,40 @@ function mostrarSugerencias(valor) {
 
 /* ------------------------ MAPA: NORMALIZAR NAVE ------------------------ */
 
-function getMapaForNave(nave) {
+function getMapaForNave(nave, seccion) {
     if (!nave) return mapasPorNave["default"];
 
-    const s = String(nave).trim();
-    const candidates = new Set();
+    const n = String(nave).trim();
+    const s = String(seccion).trim().toUpperCase();
 
-    candidates.add(s);
-    candidates.add("Nave " + s);
-    candidates.add(s.replace(/^nave\s*/i, ""));
-
-    const num = s.match(/\d+/)?.[0];
-    if (num) {
-        candidates.add(num);
-        candidates.add("Nave " + num);
+    // --- NAVE 1 ---
+    if (n === "1" || n === "Nave 1") {
+        return mapasPorNave["Nave 1"];
     }
 
-    const keys = Object.keys(mapasPorNave);
+    // --- NAVE 3 ---
+    if (n === "3" || n === "Nave 3") {
+        return mapasPorNave["Nave 3"];
+    }
 
-    for (const c of candidates)
-        for (const key of keys)
-            if (key.toLowerCase() === c.toLowerCase())
-                return mapasPorNave[key];
+    // --- NAVE 5 ---
+    if (n === "5" || n === "Nave 5") {
 
-    for (const c of candidates)
-        for (const key of keys)
-            if (key.toLowerCase().includes(String(c).toLowerCase()))
-                return mapasPorNave[key];
+        // ABC → mapa ABC
+        if (["A", "B", "C"].includes(s)) {
+            return mapasPorNave["Nave 5 ABC"];
+        }
+
+        // DEF → mapa DEF
+        if (["D", "E", "F"].includes(s)) {
+            return mapasPorNave["Nave 6 DEF"]; // ← tu nombre de key es este
+        }
+    }
+
+    // --- NAVE 6 (solo ABC) ---
+    if (n === "6" || n === "Nave 6") {
+        return mapasPorNave["Nave 6"]; 
+    }
 
     return mapasPorNave["default"];
 }
@@ -249,15 +393,25 @@ function actualizarDetalles(pueblo) {
                 : "firma-box firma-box-unchecked";
     }
 
-    mapaDiv.innerHTML = getMapaForNave(pueblo.nave);
+    mapaDiv.innerHTML = getMapaForNave(pueblo.nave, pueblo.sección);
 
     // Quitar resaltado previo
     mapaDiv.querySelectorAll("td").forEach(td => td.classList.remove("td-activo"));
 
-    // Resaltar la celda correcta
-    const selector = `td.seccion${pueblo.sección}#posicion${pueblo.posición}`;
+    // Resaltar celda correcta según si hay sección o no
+    let selector;
+
+    if (!pueblo.sección || pueblo.sección.trim() === "") {
+        // NAVE SIN SECCIONES (NAVE 1)
+        selector = `#posicion${pueblo.posición}`;
+    } else {
+        // NAVES CON SECCIONES (5 y 6)
+        selector = `td.seccion${pueblo.sección}#posicion${pueblo.posición}`;
+    }
+
     const celda = mapaDiv.querySelector(selector);
     if (celda) celda.classList.add("td-activo");
+
 }
 
 /* ----------------------------- EVENTOS ------------------------------ */

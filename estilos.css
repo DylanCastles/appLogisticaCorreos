@@ -241,6 +241,51 @@ html, body {
     vertical-align: middle; 
 }
 
+.mapaEstilos5DEF{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapaEstilos5DEF td {
+    border: 3px solid #032f60;
+    width: 25%;
+    height: 11.11111111111111111111111111111%;
+    text-align: left;
+    vertical-align: middle; 
+}
+
+.mapaEstilos1{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapaEstilos1 td {
+    border: 3px solid #032f60;
+    width: 50%;
+    height: 11.11111111111111111111111111111%;
+    text-align: right;
+    vertical-align: middle; 
+}
+
+.mapaEstilos3{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapaEstilos3 td {
+    border: 3px solid #032f60;
+    width: 33.33333333333333333333333333333%;
+    height: 7.6923076923076923076923076923077%;
+    text-align: right;
+    vertical-align: middle; 
+}
+
 .td-activo {
     background-color: #ffcd00 !important; /* amarillo */
 }
