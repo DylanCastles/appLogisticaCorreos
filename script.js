@@ -99,50 +99,54 @@ const mapasPorNave = {
             </tr>
         </table>
     `,
-    "Nave 6 DEF": `
+    "Nave 5 DEF": `
         <table class="mapaEstilos5DEF" border="1" cellspacing="0" cellpadding="8">
             <tr>
                 <td style="border: none;"></td>
                 <td rowspan="10" style="border: none;"></td>
-                <td class="seccionE tipoAlmacen" id="posicion9" style="border-top: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion10" style="border-top: none;"></td>
                 <td style="border-top: none;border-right: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion8" style="border-left: none;">11</td>
-                <td class="seccionE tipoAlmacen" id="posicion8"></td>
+                <td class="seccionE tipoAlmacen" id="posicion9"></td>
                 <td class="seccionF tipoAlmacen" id="posicion5" style="border-right: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion7" style="border-left: none;"></td>
-                <td class="seccionE tipoAlmacen" id="posicion7"></td>
+                <td class="seccionE tipoAlmacen" id="posicion8"></td>
                 <td class="seccionF tipoAlmacen" id="posicion4" style="border-right: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion6" style="border-left: none;">12</td>
-                <td class="seccionE tipoAlmacen" id="posicion6"></td>
+                <td class="seccionE tipoAlmacen" id="posicion7"></td>
                 <td class="seccionF tipoAlmacen" id="posicion3" style="border-right: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion5" style="border-left: none;"></td>
-                <td class="seccionE tipoAlmacen" id="posicion5"></td>
+                <td class="seccionE tipoAlmacen" id="posicion6"></td>
                 <td class="seccionF tipoAlmacen" id="posicion2" style="border-right: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion4" style="border-left: none;">13</td>
-                <td class="seccionE tipoAlmacen" id="posicion4"></td>
+                <td class="seccionE tipoAlmacen" id="posicion5"></td>
                 <td class="seccionF tipoAlmacen" id="posicion1" style="border-right: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion3" style="border-left: none;"></td>
-                <td class="seccionE tipoAlmacen" id="posicion3"></td>
-                <td rowspan="3" class="fueraZona" style="border-right: none;border-bottom: none;"></td>
+                <td class="seccionE tipoAlmacen" id="posicion4"></td>
+                <td rowspan="4" class="fueraZona" style="border-right: none;border-bottom: none;"></td>
             </tr>
             <tr>
                 <td class="seccionD tipoAlmacen" id="posicion2" style="border-left: none;">14</td>
+                <td class="seccionE tipoAlmacen" id="posicion3"></td>
+            </tr>
+            <tr>
+                <td class="seccionD tipoAlmacen" id="posicion1" style="border-left: none;"></td>
                 <td class="seccionE tipoAlmacen" id="posicion2"></td>
             </tr>
             <tr>
-                <td class="seccionD tipoAlmacen" id="posicion1" style="border-left: none;border-bottom: none;"></td>
+                <td style="border-left: none;border-bottom: none;"></td>
                 <td class="seccionE tipoAlmacen" id="posicion1" style="border-bottom: none;"></td>
             </tr>
         </table>
@@ -358,7 +362,7 @@ function getMapaForNave(nave, seccion) {
 
         // DEF → mapa DEF
         if (["D", "E", "F"].includes(s)) {
-            return mapasPorNave["Nave 6 DEF"]; // ← tu nombre de key es este
+            return mapasPorNave["Nave 5 DEF"]; // ← tu nombre de key es este
         }
     }
 
