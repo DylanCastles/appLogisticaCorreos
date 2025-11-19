@@ -146,7 +146,7 @@ const mapasPorNave = {
                 <td class="seccionE tipoAlmacen" id="posicion2"></td>
             </tr>
             <tr>
-                <td style="border-left: none;border-bottom: none;"></td>
+                <td style="border: none;"></td>
                 <td class="seccionE tipoAlmacen" id="posicion1" style="border-bottom: none;"></td>
             </tr>
         </table>
